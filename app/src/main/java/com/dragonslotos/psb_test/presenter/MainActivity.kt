@@ -252,7 +252,7 @@ class MainActivity : ComponentActivity() {
                         fontSize = 32.sp,
                         modifier = Modifier.padding(start = padding, top = 5.dp))
 
-                    Text(text = rate.nominal.toString() + rate.charCode + "=" + rate.value + "RUB",
+                    Text(text = rate.nominal.toString() + rate.charCode + " = " + String.format("%.2f", rate.value) + "RUB",
                         color = colorData,
                         fontFamily = Roboto,
                         fontWeight = FontWeight.Normal,
